@@ -1,7 +1,6 @@
 # The base image is expected to contain
 # /bin/opm (with a serve subcommand) and /bin/grpc_health_probe
-#FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9:v4.17.0
-FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9@sha256:a3f783d1206cffadd37d982da07202d509db700a344f50bc5b0eaf5b34653199
+FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9:v4.17
 
 ENTRYPOINT ["/bin/opm"]
 CMD ["serve", "/configs", "--cache-dir=/tmp/cache"]

@@ -1,24 +1,12 @@
 # The base image is expected to contain
 # /bin/opm (with a serve subcommand) and /bin/grpc_health_probe
-FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9:v4.21 as builder
-
-# Copy FBC root into image at /configs and pre-populate serve cache
-ADD openshift-builds-operator /configs/openshift-builds-operator
-RUN ["/bin/opm", "serve", "/configs", "--cache-dir=/tmp/cache", "--cache-only"]
-
 FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9:v4.21
-# The base image is expected to contain
-# /bin/opm (with serve subcommand) and /bin/grpc_health_probe
 
-# Configure the entrypoint and command
 ENTRYPOINT ["/bin/opm"]
 CMD ["serve", "/configs", "--cache-dir=/tmp/cache"]
 
-COPY --from=builder /configs /configs
-COPY --from=builder /tmp/cache /tmp/cache
-
 add catalog /configs
-#RUN ["/bin/opm", "serve", "/configs", "--cache-dir=/tmp/cache", "--cache-only"]
+RUN ["/bin/opm", "serve", "/configs", "--cache-dir=/tmp/cache", "--cache-only"]
 
 # Core bundle labels.
 LABEL operators.operatorframework.io.index.configs.v1=/configs

@@ -1576,11 +1576,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:77a9b57ca89b990355a1c89bd354a9825b1cd8b555465af752aafed25b18abbc"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:061334299c6bf4e255eda1337430d57906b26a7f2b5d835e983341f044d38670"
         },
         {
             "name": "manager",
-            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:8705cc2280db383fb618f15ec3e7beaef0158ce0f91509c31f60b23fd77c2d32"
+            "image": "registry.redhat.io/rhtpa/rhtpa-rhel9-operator@sha256:b2233c3cfc5f12e014cbe3e2fd578ea5e6cc69f6298e2c31dbf51be9146e249c"
         }
     ]
 }

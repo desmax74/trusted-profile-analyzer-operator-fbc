@@ -1924,7 +1924,7 @@
     "schema": "olm.bundle",
     "name": "rhtpa-operator.v3.1.2",
     "package": "rhtpa-operator",
-    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:af92096ce9fcd3fe2568828e153982fd6ea999f713200f049742ecf6ca602d5b",
+    "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:536d498bee3a94a2e2414d50b92e631280c4b3dac485e85ad90b56f8f6f2b463",
     "properties": [
         {
             "type": "olm.gvk",
@@ -2025,7 +2025,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:af92096ce9fcd3fe2568828e153982fd6ea999f713200f049742ecf6ca602d5b"
+            "image": "registry.redhat.io/rhtpa/rhtpa-operator-bundle@sha256:536d498bee3a94a2e2414d50b92e631280c4b3dac485e85ad90b56f8f6f2b463"
         },
         {
             "name": "manager",

@@ -32,7 +32,7 @@ entries:
     replaces: rhtpa-operator.v3.0.0
   - name: rhtpa-operator.v3.1.1
     replaces: rhtpa-operator.v3.1.0
-  - name: rhtpa-operator.v3.2.0
+  - name: rhtpa-operator.v3.1.2
     replaces: rhtpa-operator.v3.1.1
 ---
 schema: olm.template.basic

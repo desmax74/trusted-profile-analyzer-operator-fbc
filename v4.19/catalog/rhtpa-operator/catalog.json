@@ -105,8 +105,12 @@
             "name": "rhtpa-operator.v3.0.0"
         },
         {
-            "name": "rhtpa-operator.v3.1.0",
+            "name": "rhtpa-operator.v3.0.1",
             "replaces": "rhtpa-operator.v3.0.0"
+        },
+        {
+            "name": "rhtpa-operator.v3.1.0",
+            "replaces": "rhtpa-operator.v3.0.1"
         },
         {
             "name": "rhtpa-operator.v3.1.1",

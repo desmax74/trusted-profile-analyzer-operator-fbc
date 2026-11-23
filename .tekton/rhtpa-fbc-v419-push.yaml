@@ -8,7 +8,7 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     build.appstudio.openshift.io/build-nudge-files: "v4.19/catalog.Dockerfile, v4.19/graph.yaml , v4.19/catalog/rhtpa-operator.json"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main"
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main" && ( "v4.19/***".pathChanged() || ".tekton/rhtpa-fbc-v419-push.yaml".pathChanged() || "v4.19/catalog.Dockerfile".pathChanged() )
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: rhtpa-operator-fbc-v419
@@ -19,7 +19,7 @@ metadata:
 spec:
   params:
   - name: version
-    value: "v3.1.2"
+    value: "v3.0.1"
   - name: version-postfix-qe
     value: "-rc"
   - name: git-url

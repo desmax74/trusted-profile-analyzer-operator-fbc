@@ -33,6 +33,8 @@ spec:
     value: v4.21/catalog.Dockerfile
   - name: path-context
     value: v4.21
+  - name: build-source-image
+    value: "true"
   pipelineSpec:
     description: |
       This pipeline is ideal for building and verifying [file-based catalogs](https://konflux-ci.dev/docs/end-to-end/building-olm/#building-the-file-based-catalog).
